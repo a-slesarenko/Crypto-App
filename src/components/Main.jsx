@@ -25,29 +25,41 @@ export default function Main() {
                 <div className="container">
                     <h2 className={styles.projectsSectionTitle}>Projects</h2>
                     <ul className={styles.projectsList}>
-                        <li>
-                            <img src={projectImg1} alt="project image" />
-                            <h3>Gaming streaming portal</h3>
+                        <li className={styles.projectCard}>
+                            <a href="#">
+                                <img src={projectImg1} alt="project image" />
+                                <h3>Gaming streaming portal</h3>
+                            </a>
                         </li>
-                        <li>
-                            <img src={projectImg2} alt="project image" />
-                            <h3>Video service</h3>
+                        <li className={styles.projectCard}>
+                            <a href="#">
+                                <img src={projectImg2} alt="project image" />
+                                <h3>Video service</h3>
+                            </a>
                         </li>
-                        <li>
-                            <img src={projectImg3} alt="project image" />
-                            <h3>Video portal</h3>
+                        <li  className={styles.projectCard}>
+                            <a href="#">
+                                <img src={projectImg3} alt="project image" />
+                                <h3>Video portal</h3>
+                            </a>
                         </li>
-                        <li>
-                            <img src={projectImg4} alt="project image" />
-                            <h3>Dating app</h3>
+                        <li  className={styles.projectCard}>
+                            <a href="#">
+                                <img src={projectImg4} alt="project image" />
+                                <h3>Dating app</h3>
+                            </a>
                         </li>
-                        <li>
-                            <img src={projectImg5} alt="project image" />
-                            <h3>Landing</h3>
+                        <li  className={styles.projectCard}>
+                            <a href="#">
+                                <img src={projectImg5} alt="project image" />
+                                <h3>Landing</h3>
+                            </a>
                         </li>
-                        <li>
-                            <img src={projectImg6} alt="project image" />
-                            <h3>Gaming community</h3>
+                        <li  className={styles.projectCard}>
+                            <a href="#">
+                                <img src={projectImg6} alt="project image" />
+                                <h3>Gaming community</h3>
+                            </a>
                         </li>
                     </ul>
                 </div>

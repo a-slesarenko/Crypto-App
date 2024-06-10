@@ -1,3 +1,33 @@
-.footerMain{
-    
+$footerBackground: #171718;
+$footerText: #fff;
+
+footer{
+    padding: 60px 0 50px 0;
+    background-color: $footerBackground;
+    font-family: 'DM Sans';
+}
+
+.iconsList{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 27px;
+    column-gap: 30px;
+}
+
+.iconsItem{
+    color: $footerText;
+}
+
+.copyright{
+    color: $footerText;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    p{
+        line-height: 1.5;
+        font-size: 16px;
+        font-weight: 400;
+    }
 }
