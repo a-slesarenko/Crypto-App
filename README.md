@@ -1,1 +1,1 @@
-Just crypto app
+Portfolio
