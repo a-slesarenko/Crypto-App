@@ -6,7 +6,8 @@ module.exports = {
   mode: "development",
   entry: "./src/index.js",
   output: {
-    filename: "bundle.[hashcontent].js",
+    filename: "bundle.[contenthash].js",
+    assetModuleFilename: 'assets/images/[name][ext]',
   },
   module: {
     rules: [
@@ -34,6 +35,13 @@ module.exports = {
       {
         test: /\.(png|svg|jpg|jpeg|gif)$/i,
         type: 'asset/resource',
+      },
+      {
+        test: /\.html$/i,
+        loader: "html-loader",
+        options: {
+          sources: true,
+        },
       },
     ],
   },
