@@ -1,9 +1,14 @@
 import React from "react";
 import * as styles from "./HeaderMain.module.scss"
+import sun from "./assets/icons/Sun.svg"
+import moon from "./assets/icons/Moon.svg"
 
 export default function MainPageHeader({ burgerMenuHandler, isOpen }) {
     const [isLinkActive, setIsLinkActive] = React.useState(false);
     const linkClickHandler = () => {setIsLinkActive(!isLinkActive)};
+
+    const [theModeChanged, setSwitchMode] = React.useState(false);
+    const modeClickHandler = () => {setSwitchMode(!theModeChanged)};
 
     
 
@@ -14,6 +19,10 @@ export default function MainPageHeader({ burgerMenuHandler, isOpen }) {
                     <a href="/" className={styles.logo}>
                         My <strong>Portfolio</strong>
                     </a>
+                    <button onClick={modeClickHandler} className={styles.darkModeBtn + " " + (theModeChanged ? styles.darkModeBtnActive : '')}>
+                        <img className={styles.darkModeBtnIcon} src={sun} alt="ligth-mode" />
+                        <img className={styles.darkModeBtnIcon} src={moon} alt="dark-mode" />
+                    </button>
                     <nav className={styles.nav + ' ' + (isOpen ? styles.active : '')}>
                         <ul className={styles.navList}>
                             <li><a className={styles.navLink + ' ' + (isLinkActive ? styles.activeLink : '')} href="#" onClick={linkClickHandler}>Projects</a></li>
