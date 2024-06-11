@@ -3,31 +3,60 @@ $footerText: #fff;
 
 footer{
     padding: 60px 0 50px 0;
+
     background-color: $footerBackground;
+
     font-family: 'DM Sans';
+
+    .iconsList{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        column-gap: 30px;
+
+        margin-bottom: 27px;
+
+            .iconsItem{
+                color: $footerText;
+            }
+    }
+
+    .copyright{
+        color: $footerText;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    
+            p{
+                line-height: 1.5;
+                font-size: 16px;
+                font-weight: 400;
+            }
+    }
 }
 
-.iconsList{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: 27px;
-    column-gap: 30px;
-}
+@media (max-width: 620px) {
+    footer{
+        padding: 40px 0 30px 0;
 
-.iconsItem{
-    color: $footerText;
-}
-
-.copyright{
-    color: $footerText;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-    p{
-        line-height: 1.5;
-        font-size: 16px;
-        font-weight: 400;
+        .iconsList{
+            column-gap: 25px;
+            margin-bottom: 20px;
+            
+                .iconsItem{
+                    
+                    
+                        a{
+                            display: inline-block;
+                            width: 28px;
+                            
+                                img{
+                                    max-width: 100%;
+                                    max-height: 100%;
+                                }
+                        }
+                }
+        }
     }
 }

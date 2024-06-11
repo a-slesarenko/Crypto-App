@@ -4,49 +4,57 @@ $headerText:  #171718;
 
 .HeaderMain {
     background-color: $headerBackground;
+    color: $headerText;
+
     padding: 20px 0;
-    color: $headerText;
+
     letter-spacing: normal;
-}
 
-.flexContainer {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
+    .flexContainer {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+        row-gap: 20px;
 
-.logo {
-    font-family: 'Poppins';
-    color: $headerText;
-    font-size: 24px;
-    text-shadow: 2px -2px 2px rgba(0, 0, 0, 0.26);
-}
+        .logo {
+            font-family: 'Poppins';
+            font-size: 24px;
+            color: $headerText;
+            text-shadow: 2px -2px 2px rgba(0, 0, 0, 0.26);
 
-.logo strong {
-    font-weight: 700;
-}
+            margin-right: 10px;
 
-.nav {
-    font-family: 'Poppins';
-    font-size: 16px;
-    font-weight: 500;
-
-        &List   {
-            display: flex;
-            align-items: center;
-            column-gap: 40px;
-
-                .navItem{
-                    
-
-                        .navLink{
-                            color: $headerText;
-                            text-shadow: 2px -2px 2px rgba(0, 0, 0, 0.26);
-                        }
-                }
+            strong {
+                font-weight: 700;
+            }
         }
+
+        .nav {
+            font-family: 'Poppins';
+            font-size: 16px;
+            font-weight: 500;
+
+            &List {
+                display: flex;
+                align-items: center;
+                column-gap: 40px;
+                }
+
+            &Link {
+                color: $headerText;
+                text-shadow: 2px -2px 2px rgba(0, 0, 0, 0.26);
+            }
+        }
+    }
 }
 
+// Кнопка бургер
+.menuBtn{
+    display: none;
+}
+
+// Нижнее подчеркивание выбранной страницы сайта
 .activeLink {
     position: relative;
 
@@ -60,4 +68,74 @@ $headerText:  #171718;
         top: 100%;
     }
 }
+//конец
 
+// Адаптив шапки для планшетов
+@media (max-width: 870px) {
+    .navList{
+        column-gap: 25px;
+    }
+}
+// конец
+
+// Меню бургер адаптив для планшетов
+@media (max-width: 767px) {
+
+    .nav {
+        position: fixed;
+        top: -100%;
+        left: 0;
+        z-index: 50;
+
+        height: 100%;
+        width: 100%;
+
+        background-color: $headerBackground;
+
+        padding: 80px 15px 10px 15px;
+
+        transition: transform 0.3s ease;
+
+        display: flex;
+        flex-direction: column;
+
+        &List{
+            flex: 1;
+            flex-direction: column;
+            row-gap: 20px;
+            justify-content: center;
+
+            overflow: auto;
+
+            font-size: 32px;
+        }
+    }
+
+    .active{
+        transform: translateY(100%);
+    }
+
+    .logo{
+        z-index: 51;
+    }
+
+    .menuBtn{
+        display: flex;
+        flex-direction: column;
+        row-gap: 6px;
+
+        z-index: 51;
+
+        background-color: transparent;
+
+            span{
+                width: 34px;
+                height: 3px;
+
+                background-color:  #171718;
+
+                border-radius: 25px;
+            }
+    }
+}
+// конец

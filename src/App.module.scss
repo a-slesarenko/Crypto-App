@@ -3,3 +3,8 @@ height: 100vh;
 display: flex;
 flex-direction: column;
 }
+
+//Отключает прокрутку в меню бургер
+.lockScroll{
+    overflow: hidden;
+}

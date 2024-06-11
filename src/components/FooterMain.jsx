@@ -13,27 +13,27 @@ export default function FooterMain() {
             <div className="container">
                 <ul className={styles.iconsList}>
                     <li className={styles.iconsItem}>
-                        <a href="#">
+                        <a href="#!">
                             <img src={vk} alt="social media" />
                         </a>
                     </li>
                     <li className={styles.iconsItem}>
-                        <a href="#">
+                        <a href="#!">
                             <img src={instagram} alt="social media" />
                         </a>
                     </li>
                     <li className={styles.iconsItem}>
-                        <a href="#">
+                        <a href="#!">
                             <img src={twitter} alt="social media" />
                         </a>
                     </li>
                     <li className={styles.iconsItem}>
-                        <a href="#">
+                        <a href="#!">
                             <img src={gitHub} alt="social media" />
                         </a>
                     </li>
                     <li className={styles.iconsItem}>
-                        <a href="#">
+                        <a href="#!">
                             <img src={linkedIn} alt="social media" />
                         </a>
                     </li>

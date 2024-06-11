@@ -1,24 +1,31 @@
 import React from "react";
 import * as styles from "./HeaderMain.module.scss"
 
-export default function MainPageHeader() {
+export default function MainPageHeader({ burgerMenuHandler, isOpen }) {
     const [isLinkActive, setIsLinkActive] = React.useState(false);
-    const linkClickHandler = () => {setIsLinkActive(true)};
+    const linkClickHandler = () => {setIsLinkActive(!isLinkActive)};
+
+    
 
     return (
         <header className={styles.HeaderMain}>
             <div className="container">
                 <div className={styles.flexContainer}>
                     <a href="/" className={styles.logo}>
-                        My Front-end <strong>Portfolio</strong>
+                        My <strong>Portfolio</strong>
                     </a>
-                    <nav className={styles.nav}>
+                    <nav className={styles.nav + ' ' + (isOpen ? styles.active : '')}>
                         <ul className={styles.navList}>
-                            <li className={styles.navItem}><a className={styles.navLink + ' ' + (isLinkActive ? styles.activeLink : '')} href="#" onClick={linkClickHandler}>Projects</a></li>
-                            <li className={styles.navItem}><a className={styles.navLink} href="#" onClick={linkClickHandler}>Skills</a></li>
-                            <li className={styles.navItem}><a className={styles.navLink}  href="#" onClick={linkClickHandler}>Contacts</a></li>
+                            <li><a className={styles.navLink + ' ' + (isLinkActive ? styles.activeLink : '')} href="#" onClick={linkClickHandler}>Projects</a></li>
+                            <li><a className={styles.navLink + ' ' + (isLinkActive ? styles.activeLink : '')}>Skills</a></li>
+                            <li><a className={styles.navLink + ' ' + (isLinkActive ? styles.activeLink : '')}>Contacts</a></li>
                         </ul>
                     </nav>
+                    <button className={styles.menuBtn} onClick={burgerMenuHandler}>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
                 </div>
             </div>
         </header>

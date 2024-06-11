@@ -6,12 +6,17 @@ import Main from './components/Main'
 
 
 
- export default function App() {
+export default function App() {
+    const [isOpen, setIsOpen] = React.useState(false);
+    const burgerMenuHandler = () => {
+        setIsOpen(!isOpen);
+    }
+
     return(
-        <div className={styles.wrapper}>
-            <HeaderMain />
+        <div className={styles.wrapper + ' ' + (isOpen ? styles.lockScroll : '')}>
+            <HeaderMain burgerMenuHandler={burgerMenuHandler} isOpen={isOpen} />
             <Main />
             <FooterMain />
         </div>
     )
- }
+}

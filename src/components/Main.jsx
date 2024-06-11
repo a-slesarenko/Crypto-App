@@ -18,7 +18,7 @@ export default function Main() {
                         <div className={styles.heroText}>
                             <p>with passion for learning and creating.</p>
                         </div>
-                        <a href="#" className={styles.btn} >Download CV</a>
+                        <a href="#!" className={styles.btn} >Download CV</a>
                     </div>
             </section>
             <section className={styles.projectsSection}>
@@ -26,37 +26,37 @@ export default function Main() {
                     <h2 className={styles.projectsSectionTitle}>Projects</h2>
                     <ul className={styles.projectsList}>
                         <li className={styles.projectCard}>
-                            <a href="#">
+                            <a href="#!">
                                 <img src={projectImg1} alt="project image" />
                                 <h3>Gaming streaming portal</h3>
                             </a>
                         </li>
                         <li className={styles.projectCard}>
-                            <a href="#">
+                            <a href="#!">
                                 <img src={projectImg2} alt="project image" />
                                 <h3>Video service</h3>
                             </a>
                         </li>
                         <li  className={styles.projectCard}>
-                            <a href="#">
+                            <a href="#!">
                                 <img src={projectImg3} alt="project image" />
                                 <h3>Video portal</h3>
                             </a>
                         </li>
                         <li  className={styles.projectCard}>
-                            <a href="#">
+                            <a href="#!">
                                 <img src={projectImg4} alt="project image" />
                                 <h3>Dating app</h3>
                             </a>
                         </li>
                         <li  className={styles.projectCard}>
-                            <a href="#">
+                            <a href="#!">
                                 <img src={projectImg5} alt="project image" />
                                 <h3>Landing</h3>
                             </a>
                         </li>
                         <li  className={styles.projectCard}>
-                            <a href="#">
+                            <a href="#!">
                                 <img src={projectImg6} alt="project image" />
                                 <h3>Gaming community</h3>
                             </a>
