@@ -119,50 +119,37 @@ main {
     }
     // конец первого section hero
     // Здесь начинается второй section projects
-    .projectsSection{
-        padding: 75px 0 70px 0;
+    .aboutSection {
+        padding: 70px 0;
 
-        text-align: center;
+            .aboutList {
+                margin: 0 auto;
 
-        .projectsSectionTitle{
-            margin-bottom: 60px;
-        
-            color: $purple;
-            line-height: 1.3;
-            font-size: 60px;
-            font-weight: 700;
-        }
+                max-width: 570px;
 
-        .projectsList{
-            display:flex;
-            flex-wrap: wrap;
-            justify-content: center;
-            gap: 30px;
-        
-            .projectCard{
-                max-width: 370px;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                row-gap: 40px;
+                text-align: center;
+                
+                    .contentListItem{ 
+                        font-size: 18px;
+                        line-height: 1.5;
 
-                background-color: $mainText;
+                        p + p {
+                            margin-top: 0.5em;
+                        }
 
-                border-radius: 10px;
+                            .aboutListItemTitle{
+                                margin-bottom: 20px;
 
-                box-shadow: 0px 5px 35px rgba(0, 0, 0, 0.25);
-        
-                img{
-                    border-radius: 10px;
-                }
-        
-                h3{
-                    padding: 15px 20px 25px 20px;
-
-                    font-size: 24px;
-                    font-weight: 700;
-                    line-height: 1.3;
-                    text-align: left;
-                    color: black;
-                }
+                                font-size: 40px;
+                                font-weight: 700;
+                                line-height: 1.3;
+                            }
+                    }
             }
-        }
     }
     // конец второго section projects
 }
@@ -173,7 +160,7 @@ main {
     main{
 
         .heroSection{
-            min-height: unset;
+            min-height: 495px;
 
             .heroContainer{
 
@@ -186,23 +173,21 @@ main {
                 }
             }
         }
-        .projectsSection{
-            padding: 40px 0;
-            
-            .projectsSectionTitle{
-                font-size: 40px;
-                margin-bottom: 30px;
-            }
-
-            .projectsList{
-
-                .projectCard{
-
-                    h3{
-                        font-size: 20px;
-                    }
+        .aboutSection {
+            padding: 30px 0;
+    
+                .aboutList {
+                    row-gap: 20px;
+                    
+                        .contentListItem{ 
+                            font-size: 16px;
+    
+                                .aboutListItemTitle{
+                                    margin-bottom: 10px;
+                                    font-size: 30px;
+                                }
+                        }
                 }
-            }
         }
     }
 }
