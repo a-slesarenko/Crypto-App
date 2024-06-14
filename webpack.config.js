@@ -8,6 +8,7 @@ module.exports = {
   output: {
     filename: "bundle.[contenthash].js",
     assetModuleFilename: 'assets/images/[name][ext]',
+    clean: true,
   },
   module: {
     rules: [
@@ -19,7 +20,7 @@ module.exports = {
         },
       },
       {
-        test: /\.s[ac]ss$/i,
+        test: /\.(s[ac]ss|css)$/i,
         use: [
           MiniCssExtractPlugin.loader,
           {
@@ -55,6 +56,7 @@ module.exports = {
     new MiniCssExtractPlugin(),
   ],
   devServer: {
+    historyApiFallback: true,
     port: 3000,
     static: {
       directory: path.join(__dirname, "dist"),

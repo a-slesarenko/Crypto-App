@@ -1,10 +1,10 @@
 import React from "react";
 import * as styles from "./FooterMain.module.scss"
-import vk from './assets/icons/vk.svg'
-import gitHub from './assets/icons/gitHub.svg'
-import twitter from './assets/icons/twitter.svg'
-import linkedIn from './assets/icons/linkedIn.svg'
-import instagram from './assets/icons/instagram.svg'
+import vk from '.././assets/icons/vk.svg'
+import gitHub from '.././assets/icons/gitHub.svg'
+import twitter from '.././assets/icons/twitter.svg'
+import linkedIn from '.././assets/icons/linkedIn.svg'
+import instagram from '.././assets/icons/instagram.svg'
 
 
 export default function FooterMain() {

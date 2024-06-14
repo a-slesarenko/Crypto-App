@@ -1,11 +1,10 @@
-$mainBackground: #171718;
-$purple: #5C62EC;
-$mainText: #fff;
-
 main {
     flex: 1 0 auto;
 
     font-family: 'DM Sans';
+
+    background-color: var(--page-bg);
+    color: var(--text-color);
 
     // Здесь начинается section projects
     .projectsSection{
@@ -16,7 +15,7 @@ main {
         .projectsSectionTitle{
             margin-bottom: 60px;
         
-            color: $purple;
+            color: var(--accent);
             line-height: 1.3;
             font-size: 60px;
             font-weight: 700;
@@ -31,11 +30,11 @@ main {
             .projectCard{
                 max-width: 370px;
 
-                background-color: $mainText;
+                background-color: var(--project-card-bg);
 
                 border-radius: 10px;
 
-                box-shadow: 0px 5px 35px rgba(0, 0, 0, 0.25);
+                box-shadow: var(--box-shadow);
         
                 img{
                     border-radius: 10px;
@@ -48,7 +47,7 @@ main {
                     font-weight: 700;
                     line-height: 1.3;
                     text-align: left;
-                    color: black;
+                    color: var(--project-card-text);
                 }
             }
         }

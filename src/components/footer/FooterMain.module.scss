@@ -1,10 +1,7 @@
-$footerBackground: #171718;
-$footerText: #fff;
-
 footer{
     padding: 60px 0 50px 0;
 
-    background-color: $footerBackground;
+    background-color: var(--footer-bg);
 
     font-family: 'DM Sans';
 
@@ -17,12 +14,12 @@ footer{
         margin-bottom: 27px;
 
             .iconsItem{
-                color: $footerText;
+                color: var(--footer-text);
             }
     }
 
     .copyright{
-        color: $footerText;
+        color: var(--footer-text);
 
         display: flex;
         justify-content: center;
