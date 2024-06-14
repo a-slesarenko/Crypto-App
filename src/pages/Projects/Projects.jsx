@@ -1,14 +1,14 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
 import * as styles from './Projects.module.scss'
-import projectImg1 from '../components/assets/images/01.jpg'
-import projectImg2 from '../components/assets/images/02.jpg'
-import projectImg3 from '../components/assets/images/03.jpg'
-import projectImg4 from '../components/assets/images/04.jpg'
-import projectImg5 from '../components/assets/images/05.jpg'
-import projectImg6 from '../components/assets/images/06.jpg'
+import projectImg1 from '../../assets/images/01.jpg'
+import projectImg2 from '../../assets/images/02.jpg'
+import projectImg3 from '../../assets/images/03.jpg'
+import projectImg4 from '../../assets/images/04.jpg'
+import projectImg5 from '../../assets/images/05.jpg'
+import projectImg6 from '../../assets/images/06.jpg'
 
-export default function Projects() {
+function Projects() {
     return(
         <main>
         <section className={styles.projectsSection}>
@@ -57,3 +57,5 @@ export default function Projects() {
     </main>
     )
 }
+
+export default Projects

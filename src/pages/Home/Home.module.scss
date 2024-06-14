@@ -1,0 +1,159 @@
+main {
+    flex: 1 0 auto;
+    font-family: "DM Sans";
+
+    // начало первого section hero
+
+    .heroSection {
+        background-color: var(--black);
+        background: var(--black) url("../../../public/Abstract.png") center/auto auto no-repeat;
+        color: var(--white);
+        padding: 40px 0;
+        min-height: 695px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        .heroContainer {
+            padding: 0 15px;
+            max-width: 660px;
+            text-align: center;
+
+            .heroTitle {
+                font-size: 40px;
+                font-weight: 700;
+                line-height: 1.4;
+                margin-bottom: 20px;
+
+                strong {
+                    font-size: 60px;
+                    font-weight: 700;
+                }
+
+                em {
+                    color: var(--accent);
+                    font-style: normal;
+                }
+            }
+
+            .heroText {
+                font-size: 18px;
+                font-weight: 500;
+                line-height: 24px;
+                margin-bottom: 40px;
+
+                p + p {
+                    margin-top: 0.5em;
+                }
+            }
+
+            .btn {
+                display: inline-block;
+                background-color: var(--accent);
+                padding: 12px 28px;
+                height: 48px;
+                border-radius: 5px;
+                color: var(--white);
+                letter-spacing: 0.15px;
+                font-size: 16px;
+                font-weight: 500;
+                line-height: normal;
+                position: relative;
+                overflow: hidden;
+
+                &:active {
+                    transform: scale(0.9);
+                    background-color: darken(#5c62ec, 5%);
+                    box-shadow: 0 2px 25px rgba(255, 0, 130, 0.2);
+                }
+                &:hover {
+                    box-shadow: 1px 1px 25px 10px rgba(146, 148, 248, 0.4);
+                }
+                &:before {
+                    content: "";
+                    position: absolute;
+                    z-index: 0;
+                    top: 0;
+                    left: -100%;
+                    width: 100%;
+                    height: 100%;
+                    background: linear-gradient(120deg, transparent, rgba(146, 148, 248, 0.4), transparent);
+                    transition: all 650ms;
+                }
+                &:hover:before {
+                    left: 100%;
+                }
+            }
+        }
+    }
+    // конец первого section hero
+    // Здесь начинается section about
+    .aboutSection {
+        padding: 70px 0;
+        background-color: var(--page-bg);
+        color: var(--text-color);
+
+        .aboutList {
+            margin: 0 auto;
+            max-width: 570px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            row-gap: 40px;
+            text-align: center;
+
+            .contentListItem {
+                font-size: 18px;
+                line-height: 1.5;
+
+                p + p {
+                    margin-top: 0.5em;
+                }
+
+                .aboutListItemTitle {
+                    margin-bottom: 20px;
+                    font-size: 40px;
+                    font-weight: 700;
+                    line-height: 1.3;
+                }
+            }
+        }
+    }
+    // конец второго section about
+}
+
+//адаптив под смартфоны
+@media (max-width: 620px) {
+    main {
+        .heroSection {
+            min-height: 495px;
+
+            .heroContainer {
+                .heroTitle {
+                    font-size: 30px;
+
+                    strong {
+                        font-size: 40px;
+                    }
+                }
+            }
+        }
+        .aboutSection {
+            padding: 30px 0;
+
+            .aboutList {
+                row-gap: 20px;
+
+                .contentListItem {
+                    font-size: 16px;
+
+                    .aboutListItemTitle {
+                        margin-bottom: 10px;
+                        font-size: 30px;
+                    }
+                }
+            }
+        }
+    }
+}
+// конец

@@ -1,10 +1,14 @@
 .wrapper {
-display: flex;
-flex-direction: column;
-min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    --page-bg: var(--page-bg-light);
+    --text-color: var(--text-color-light);
+    --project-card-bg: var(--project-card-bg-light);
+    --project-card-text: var(--project-card-text-light);
 }
 
 //Отключает прокрутку в меню бургер
-.lockScroll{
+.lockScroll {
     overflow: hidden;
 }

@@ -4,7 +4,7 @@ import * as styles from "./Project.module.scss"
 import GithubButton from "../../components/GithubButton/GithubButton"
 import { projects } from "../../helpers/projectsData"
 
-export default function Project() {
+function Project() {
     const {id} = useParams();
     const project = projects[id];
 
@@ -29,3 +29,5 @@ export default function Project() {
 		</main>
     )
 }
+
+export default Project

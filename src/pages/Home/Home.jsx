@@ -1,7 +1,7 @@
 import React from "react";
 import * as styles from './Home.module.scss'
 
-export default function Home() {
+function Home() {
     return (
         <main>
             <section className={styles.heroSection}>
@@ -36,3 +36,5 @@ export default function Home() {
         </main>
     )
 }
+
+export default Home

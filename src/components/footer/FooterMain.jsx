@@ -1,13 +1,13 @@
 import React from "react";
 import * as styles from "./FooterMain.module.scss"
-import vk from '.././assets/icons/vk.svg'
-import gitHub from '.././assets/icons/gitHub.svg'
-import twitter from '.././assets/icons/twitter.svg'
-import linkedIn from '.././assets/icons/linkedIn.svg'
-import instagram from '.././assets/icons/instagram.svg'
+import vk from '../../assets/svg/icons/vk.svg'
+import gitHub from '../../assets/svg/icons/gitHub.svg'
+import twitter from '../../assets/svg/icons/twitter.svg'  
+import linkedIn from '../../assets/svg/icons/linkedIn.svg' 
+import instagram from '../../assets/svg/icons/instagram.svg'
 
 
-export default function FooterMain() {
+function FooterMain() {
     return (
         <footer>
             <div className="container">
@@ -45,3 +45,5 @@ export default function FooterMain() {
         </footer>
     )
 }
+
+export default FooterMain

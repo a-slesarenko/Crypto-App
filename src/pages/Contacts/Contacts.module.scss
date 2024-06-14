@@ -1,0 +1,76 @@
+main {
+    flex: 1 0 auto;
+    font-family: "DM Sans";
+    background-color: var(--page-bg);
+    color: var(--text-color);
+
+    .contactsSection {
+        padding: 70px 0;
+
+        .contactsTitle1 {
+            margin-bottom: 60px;
+            font-size: 60px;
+            font-weight: 700;
+            line-height: 1.3;
+            color: var(--accent);
+            text-align: center;
+        }
+
+        .contactsList {
+            margin: 0 auto;
+            max-width: 570px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            row-gap: 40px;
+            text-align: center;
+
+            a {
+                color: var(--accent);
+            }
+
+            .contactsListItem {
+                font-size: 18px;
+                line-height: 1.5;
+
+                p + p {
+                    margin-top: 0.5em;
+                }
+
+                .contactsTitle2 {
+                    margin-bottom: 20px;
+                    font-size: 40px;
+                    font-weight: 700;
+                    line-height: 1.3;
+                }
+            }
+        }
+    }
+}
+
+//адаптив под смартфоны
+@media (max-width: 620px) {
+    main {
+        .contactsSection {
+            padding: 40px 0;
+
+            .contactsTitle1 {
+                font-size: 40px;
+                margin-bottom: 30px;
+            }
+
+            .contactsList {
+                row-gap: 20px;
+
+                .contactsListItem {
+                    font-size: 16px;
+
+                    .contactsTitle2 {
+                        font-size: 22px;
+                    }
+                }
+            }
+        }
+    }
+}
+// конец

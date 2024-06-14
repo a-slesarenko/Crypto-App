@@ -1,7 +1,7 @@
 import React from "react"
 import * as styles from "./Contacts.module.scss"
 
-export default function Contacts() {
+function Contacts() {
     return(
         <main>
 			<section className={styles.contactsSection}>
@@ -32,3 +32,5 @@ export default function Contacts() {
 		</main>
     )
 }
+
+export default Contacts

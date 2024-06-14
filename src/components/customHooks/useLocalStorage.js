@@ -14,9 +14,7 @@ function getLocalStorageValue(key, defaultValue) {
 // далее use Effect записывает в локальное хранилище ключ key со значением newState в формате json, а сам хук возвращает  const [newState, setNewstate]
 
 export const useLocalStorage = (key, defaultValue) => {
-    const [newState, setNewstate] = React.useState(() => {
-            return getLocalStorageValue(key, defaultValue);
-    });
+    const [newState, setNewstate] = React.useState(getLocalStorageValue(key, defaultValue));
 
     React.useEffect(() => {
         localStorage.setItem(key, JSON.stringify(newState));

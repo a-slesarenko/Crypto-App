@@ -1,14 +1,14 @@
-import project01Big from "../components/assets/images//01-big.jpg";
+import project01Big from "../assets/images/01-big.jpg";
 
-import project02Big from "../components/assets/images//02-big.jpg";
+import project02Big from "../assets/images//02-big.jpg";
 
-import project03Big from "../components/assets/images/03-big.jpg";
+import project03Big from "../assets/images/03-big.jpg";
 
-import project04Big from "../components/assets/images/04-big.jpg";
+import project04Big from "../assets/images/04-big.jpg";
 
-import project05Big from "../components/assets/images/05-big.jpg";
+import project05Big from "../assets/images/05-big.jpg";
 
-import project06Big from "../components/assets/images/06-big.jpg";
+import project06Big from "../assets/images/06-big.jpg";
 
 const projects = [
 	{
