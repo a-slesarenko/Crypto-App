@@ -3,10 +3,13 @@ import * as styles from "./HeaderMain.module.scss"
 import sun from ".././assets/icons/Sun.svg"
 import moon from ".././assets/icons/Moon.svg"
 import { NavLink } from "react-router-dom";
+import { useLocalStorage } from "../customHooks/useLocalStorage";
 
 export default function MainPageHeader({ burgerMenuHandler, isOpen }) {
 
-    const [hasModeChanged, setHasModeChanged] = React.useState('light');
+    // Теперь использую кастом хук и выбранная тема сохранятеся в localStorage, вместо прошлого юз стейт const [hasModeChanged, setHasModeChanged] = React.useState('light');
+    const [hasModeChanged, setHasModeChanged] = useLocalStorage("siteTheme", 'light');
+
     const modeClickHandler = () => {
         if(hasModeChanged === 'light') {
             setHasModeChanged('dark');
