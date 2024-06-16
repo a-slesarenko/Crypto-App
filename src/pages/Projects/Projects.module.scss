@@ -3,6 +3,7 @@ main {
     font-family: "DM Sans";
     background-color: var(--page-bg);
     color: var(--text-color);
+    transition: background-color 0.8s ease, color 1s ease;
 
     // Здесь начинается section projects
     .projectsSection {

@@ -3,6 +3,7 @@
     color: var(--header-text);
     padding: 20px 0;
     letter-spacing: normal;
+    transition: background-color 0.8s ease, color 1s ease;
 
     .flexContainer {
         display: flex;
@@ -154,7 +155,7 @@
             span {
                 width: 34px;
                 height: 3px;
-                background-color: #171718;
+                background-color: var(--header-menu-burger);
                 border-radius: 25px;
             }
         }

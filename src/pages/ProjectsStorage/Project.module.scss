@@ -3,6 +3,7 @@ main {
     font-family: "DM Sans";
     color: var(--text-color);
     background-color: var(--page-bg);
+    transition: background-color 0.8s ease, color 1s ease;
 
     .projectSection {
         padding: 70px 0;

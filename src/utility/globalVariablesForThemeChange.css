@@ -15,6 +15,7 @@
 	/* All */
 	--header-bg: var(--header-bg-light);
 	--header-text: var(--header-text-light);
+	--header-menu-burger: var(--header-menu-burger-light);
 
     --page-bg: var(--page-bg-light);
 	--text-color: var(--text-color-light);
@@ -25,6 +26,7 @@
 	/* Light mode */
     --header-bg-light: var(--white);
 	--header-text-light: var(--black);
+	--header-menu-burger-light: var(--black);
 
     --page-bg-light: var(--white);
 	--text-color-light: var(--black);
@@ -36,6 +38,7 @@
     /* --header-bg-dark: var(--black); */
     --header-bg-dark:  #252526;
 	--header-text-dark: var(--white);
+	--header-menu-burger-dark: var(--white);
 
     /* --page-bg-dark: var(--black); */
     --page-bg-dark: #252526;

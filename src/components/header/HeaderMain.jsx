@@ -21,7 +21,7 @@ function MainPageHeader({ burgerMenuHandler, isOpen, hasModeChanged, setHasModeC
                     My <strong>Portfolio</strong>
                     </NavLink>
                     <button onClick={modeClickHandler} className={styles.darkModeBtn + " " + ((hasModeChanged === 'dark') ? styles.darkModeBtnActive : '')}>
-                        <img className={styles.darkModeBtnIcon} src={sun} alt="ligth-mode" />
+                        <img className={styles.darkModeBtnIcon} src={sun} alt="light-mode" />
                         <img className={styles.darkModeBtnIcon} src={moon} alt="dark-mode" />
                     </button>
                     <nav className={styles.nav + ' ' + (isOpen ? styles.active : '')}>
