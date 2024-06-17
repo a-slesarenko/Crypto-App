@@ -12,7 +12,7 @@ function Home() {
                         <div className={styles.heroText}>
                             <p>with passion for learning and creating.</p>
                         </div>
-                        <a href="#!" className={styles.btn} >Download CV</a>
+                        <a href="https://hh.ru/resume/4b1f35c3ff0d541e440039ed1f4c6a466f7752" target="_blank" rel="noopener noreferrer" className={styles.btn} >View resume</a>
                     </div>
             </section>
             <section className={styles.aboutSection}>
@@ -21,14 +21,17 @@ function Home() {
                         <li className={styles.contentListItem}>
                             <h2 className={styles.aboutListItemTitle}>Frontend</h2>
                             <p>
-                                JavaScript, TypeScript, ReactJS, Angular, Redux,
-                                HTML, CSS, NPM, BootStrap, MaterialUI, Yarn,
-                                TailwindCSS, StyledComponents
+                                JavaScript, TypeScript, ReactJS, React Router, Redux,
+                                HTML, CSS, SCSS/SASS, NPM, MaterialUI, clsx
                             </p>
                         </li>
                         <li className={styles.contentListItem}>
-                            <h2 className={styles.aboutListItemTitle}>Backend</h2>
-                            <p>NodeJS, MySQL, MongoDB, PHP, Laravel</p>
+                            <h2 className={styles.aboutListItemTitle}>Project assembly</h2>
+                            <p>Webpack</p>
+                        </li>
+                        <li className={styles.contentListItem}>
+                            <h2 className={styles.aboutListItemTitle}>Version control system & Repository</h2>
+                            <p>Git & GitHub</p>
                         </li>
                     </ul>
                 </div>

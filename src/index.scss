@@ -23,6 +23,10 @@
 		--project-card-bg: var(--accent);
 		--project-card-text: var(--project-card-text-dark);
 	}
+
+	.lockScroll{
+		overflow: hidden;
+	}
 }
 
 #root {

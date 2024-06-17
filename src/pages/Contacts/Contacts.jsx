@@ -21,9 +21,7 @@ function Contacts() {
                         <li className={styles.contactsListItem}>
                             <h2 className={styles.contactsTitle2}>Email</h2>
                             <p>
-                                <a href="#!">
-                                            slesarenko.1994@inbox.ru
-                                </a>
+                                <a href="mailto:slesarenko.1994@inbox.ru">slesarenko.1994@inbox.ru</a>
                             </p>
                         </li>
                     </ul>

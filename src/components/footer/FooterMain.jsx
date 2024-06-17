@@ -1,10 +1,8 @@
 import React from "react";
 import * as styles from "./FooterMain.module.scss"
-import vk from '../../assets/svg/icons/vk.svg'
-import gitHub from '../../assets/svg/icons/gitHub.svg'
-import twitter from '../../assets/svg/icons/twitter.svg'  
-import linkedIn from '../../assets/svg/icons/linkedIn.svg' 
-import instagram from '../../assets/svg/icons/instagram.svg'
+import telegram from '../../assets/svg/icons/telegram.svg'
+import gitHub from '../../assets/svg/icons/github.svg'
+import whatsapp from '../../assets/svg/icons/whatsapp.svg'
 
 
 function FooterMain() {
@@ -13,33 +11,23 @@ function FooterMain() {
             <div className="container">
                 <ul className={styles.iconsList}>
                     <li className={styles.iconsItem}>
-                        <a href="#!">
-                            <img src={vk} alt="social media" />
+                        <a href="https://t.me/AndrewSle" target="_blank" rel="noopener noreferrer">
+                            <img src={telegram} alt="social media" />
                         </a>
                     </li>
                     <li className={styles.iconsItem}>
-                        <a href="#!">
-                            <img src={instagram} alt="social media" />
-                        </a>
-                    </li>
-                    <li className={styles.iconsItem}>
-                        <a href="#!">
-                            <img src={twitter} alt="social media" />
-                        </a>
-                    </li>
-                    <li className={styles.iconsItem}>
-                        <a href="#!">
+                        <a href="https://github.com/a-slesarenko" target="_blank" rel="noopener noreferrer">
                             <img src={gitHub} alt="social media" />
                         </a>
                     </li>
                     <li className={styles.iconsItem}>
-                        <a href="#!">
-                            <img src={linkedIn} alt="social media" />
+                        <a href="https://wa.me/+79044327169" target="_blank" rel="noopener noreferrer">
+                            <img src={whatsapp} alt="social media" />
                         </a>
                     </li>
                 </ul>
                 <div className={styles.copyright}>
-                    <p>© 2024 frontend-dev.com</p>
+                    <p>© 2024 all rights reserved</p>
                 </div>
             </div>
         </footer>

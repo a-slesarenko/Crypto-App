@@ -8,8 +8,3 @@
     --project-card-text: var(--project-card-text-light);
     --header-menu-burger: var(--header-menu-burger-light);
 }
-
-//Отключает прокрутку в меню бургер
-.lockScroll {
-    overflow: hidden;
-}

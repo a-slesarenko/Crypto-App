@@ -7,6 +7,7 @@ main {
 
     .contactsSection {
         padding: 70px 0;
+        font-size: 20px;
 
         .contactsTitle1 {
             margin-bottom: 60px;
@@ -28,10 +29,11 @@ main {
 
             a {
                 color: var(--accent);
+                font-weight: 500;
+                font-size: 20px;
             }
 
             .contactsListItem {
-                font-size: 18px;
                 line-height: 1.5;
 
                 p + p {
