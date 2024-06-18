@@ -1,5 +1,5 @@
 import React from 'react'
-import { BrowserRouter } from 'react-router-dom'
+import { HashRouter } from 'react-router-dom'
 import HeaderMain from './components/header/HeaderMain'
 import FooterMain from './components/footer/FooterMain'
 import RoutesComponent from './Routes'
@@ -12,7 +12,7 @@ import clsx from 'clsx'
 
 function App() {
 
-    // Теперь использую кастом хук и выбранная тема сохранятеся в localStorage, вместо прошлого юз стейт const [hasModeChanged, setHasModeChanged] = React.useState('light')
+    // Кастом хук для сохранения темы в LocalStorage
     const [hasModeChanged, setHasModeChanged] = useLocalStorage("siteTheme", 'light');
 
     // При помощи clsx вычислю классы
@@ -22,12 +22,12 @@ function App() {
     return(
         <div className={wrapperCombinedClass}>
 
-            <BrowserRouter>
+            <HashRouter>
                 <ScrollToTop />
                 <HeaderMain hasModeChanged={hasModeChanged} setHasModeChanged={setHasModeChanged} />
                     <RoutesComponent />
                 <FooterMain />
-            </BrowserRouter>
+            </HashRouter>
             
         </div>
     )

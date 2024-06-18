@@ -22,6 +22,7 @@
 
     --project-card-bg: var(----project-card-bg-light);
 	--project-card-text: var(----project-card-text-light);
+	--box-shadow: var(--box-shadow-light);
 
 	/* Light mode */
     --header-bg-light: var(--white);
@@ -33,6 +34,7 @@
 
     --project-card-bg-light: var(--white);
 	--project-card-text-light: var(--black);
+	--box-shadow-light: 0 0 10px 3px rgba(95, 81, 224, 0.404);
 
     /* Dark mode */
     /* --header-bg-dark: var(--black); */
@@ -46,8 +48,10 @@
 
     --project-card-bg-dark: var(--accent);
 	--project-card-text-dark: var(--white);
+	--box-shadow-dark: 0 0 10px 3px rgb(131, 131, 131);
+
 
     /* _________________________________ */
 	--accent: var(--purple);
-    --box-shadow: 0px 5px 35px rgba(0, 0, 0, 0.658);
+    /* --box-shadow: 0px 5px 35px rgba(0, 0, 0, 0.658); */
 }

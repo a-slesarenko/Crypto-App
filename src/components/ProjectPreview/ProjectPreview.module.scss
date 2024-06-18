@@ -1,11 +1,19 @@
+$flexWidth: clamp(19.375rem, 18.51rem + 3.85vw, 23.125rem);
+
 .projectCard {
-    max-width: 370px;
+    width: $flexWidth;
     background-color: var(--project-card-bg);
     border-radius: 10px;
     box-shadow: var(--box-shadow);
 
-    img {
-        border-radius: 10px;
+    a{
+        display: inline-block;
+        width: $flexWidth;
+        
+        img {
+            border-radius: 10px;
+            max-width: 100%;
+        }
     }
 
     h3 {
