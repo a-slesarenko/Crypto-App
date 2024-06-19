@@ -12,48 +12,48 @@ import project06Big from "../assets/images/06-big.jpg";
 import project06 from "../assets/images/06.jpg";
 
 const projects = [
-	{
-		title: 'Gaming streaming portal',
-		skills: 'React, Node.js, MongoDB',
-		img: project01,
-		imgBig: project01Big,
-		gitHubLink: 'https://github.com',
-	},
-	{
-		title: 'Video service',
-		img: project02,
-		imgBig: project02Big,
-		skills: 'React, PHP, MySql',
-		gitHubLink: 'https://github.com',
-	},
-	{
-		title: 'Video portal',
-		img: project03,
-		imgBig: project03Big,
-		skills: 'Vue JS, Node.js, MongoDB',
-		gitHubLink: 'https://github.com',
-	},
-	{
-		title: 'Dating app',
-		img: project04,
-		imgBig: project04Big,
-		skills: 'React Native',
-		gitHubLink: 'https://github.com',
-	},
-	{
-		title: 'Landing',
-		img: project05,
-		imgBig: project05Big,
-		skills: 'HTML, SCSS, JS',
-		gitHubLink: 'https://github.com',
-	},
-	{
-		title: 'Gaming community',
-		img: project06,
-		imgBig: project06Big,
-		skills: 'React, PHP, MySql',
-		gitHubLink: 'https://github.com',
-	},
+  {
+    title: "Gaming streaming portal",
+    skills: "React, Node.js, MongoDB",
+    img: project01,
+    imgBig: project01Big,
+    gitHubLink: "https://github.com",
+  },
+  {
+    title: "Video service",
+    img: project02,
+    imgBig: project02Big,
+    skills: "React, PHP, MySql",
+    gitHubLink: "https://github.com",
+  },
+  {
+    title: "Video portal",
+    img: project03,
+    imgBig: project03Big,
+    skills: "Vue JS, Node.js, MongoDB",
+    gitHubLink: "https://github.com",
+  },
+  {
+    title: "Dating app",
+    img: project04,
+    imgBig: project04Big,
+    skills: "React Native",
+    gitHubLink: "https://github.com",
+  },
+  {
+    title: "Landing",
+    img: project05,
+    imgBig: project05Big,
+    skills: "HTML, SCSS, JS",
+    gitHubLink: "https://github.com",
+  },
+  {
+    title: "Gaming community",
+    img: project06,
+    imgBig: project06Big,
+    skills: "React, PHP, MySql",
+    gitHubLink: "https://github.com",
+  },
 ];
 
-export {projects}
+export { projects };
