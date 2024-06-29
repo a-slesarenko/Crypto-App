@@ -1,5 +1,4 @@
-import project01Big from "../assets/images/01-big.jpg";
-import project01 from "../assets/images/01.jpg";
+import devSearch from "../assets/images/devsearch.png";
 import project02Big from "../assets/images//02-big.jpg";
 import project02 from "../assets/images/02.jpg";
 import project03Big from "../assets/images/03-big.jpg";
@@ -13,42 +12,42 @@ import project06 from "../assets/images/06.jpg";
 
 const projects = [
   {
-    title: "Gaming streaming portal",
-    skills: "React, Node.js, MongoDB",
-    img: project01,
-    imgBig: project01Big,
-    gitHubLink: "https://github.com",
+    title: "Dev-finder",
+    skills: "React, Typescript, Generate React CLI, GitHub api",
+    img: devSearch,
+    imgBig: devSearch,
+    gitHubLink: "https://github.com/a-slesarenko/Dev-Search",
   },
   {
-    title: "Video service",
+    title: "My future project",
     img: project02,
     imgBig: project02Big,
     skills: "React, PHP, MySql",
     gitHubLink: "https://github.com",
   },
   {
-    title: "Video portal",
+    title: "My future project",
     img: project03,
     imgBig: project03Big,
     skills: "Vue JS, Node.js, MongoDB",
     gitHubLink: "https://github.com",
   },
   {
-    title: "Dating app",
+    title: "My future project",
     img: project04,
     imgBig: project04Big,
     skills: "React Native",
     gitHubLink: "https://github.com",
   },
   {
-    title: "Landing",
+    title: "My future project",
     img: project05,
     imgBig: project05Big,
     skills: "HTML, SCSS, JS",
     gitHubLink: "https://github.com",
   },
   {
-    title: "Gaming community",
+    title: "My future project",
     img: project06,
     imgBig: project06Big,
     skills: "React, PHP, MySql",
