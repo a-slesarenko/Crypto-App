@@ -29,20 +29,21 @@ function Home() {
         <div className="container">
           <ul className={styles.aboutList}>
             <li className={styles.contentListItem}>
-              <h2 className={styles.aboutListItemTitle}>Frontend</h2>
+              <h2 className={styles.aboutListTitle}>My skills</h2>
+              <h3>Front-end</h3>
               <p>
                 JavaScript, TypeScript, ReactJS, React Router, Redux, HTML, CSS,
                 SCSS/SASS, NPM/Yarn, MaterialUI, clsx
               </p>
             </li>
             <li className={styles.contentListItem}>
-              <h2 className={styles.aboutListItemTitle}>Project assembly</h2>
+              <h3 className={styles.aboutListItemTitle}>Project assembly</h3>
               <p>Webpack</p>
             </li>
             <li className={styles.contentListItem}>
-              <h2 className={styles.aboutListItemTitle}>
+              <h3 className={styles.aboutListItemTitle}>
                 Version control system & Repository
-              </h2>
+              </h3>
               <p>Git & GitHub</p>
             </li>
           </ul>

@@ -111,11 +111,17 @@ main {
                     margin-top: 0.5em;
                 }
 
-                .aboutListItemTitle {
+                .aboutListTitle {
                     margin-bottom: 20px;
                     font-size: 40px;
                     font-weight: 700;
                     line-height: 1.3;
+                }
+
+                h3{
+                    margin-bottom: 10px;
+                    font-size: 30px;
+                    font-weight: 500;
                 }
             }
         }
