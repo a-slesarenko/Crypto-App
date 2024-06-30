@@ -32,7 +32,7 @@ function Home() {
               <h2 className={styles.aboutListItemTitle}>Frontend</h2>
               <p>
                 JavaScript, TypeScript, ReactJS, React Router, Redux, HTML, CSS,
-                SCSS/SASS, NPM, MaterialUI, clsx
+                SCSS/SASS, NPM/Yarn, MaterialUI, clsx
               </p>
             </li>
             <li className={styles.contentListItem}>
