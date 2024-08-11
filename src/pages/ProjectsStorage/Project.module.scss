@@ -3,10 +3,12 @@ main {
     font-family: "DM Sans";
     color: var(--text-color);
     background-color: var(--page-bg);
-    transition: background-color 0.8s ease, color 1s ease;
+    transition:
+        background-color 0.8s ease,
+        color 1s ease;
 
     .projectSection {
-        padding: 70px 0;
+        padding: 30px 0;
 
         .projectDetails {
             margin: 0 auto;
@@ -37,6 +39,46 @@ main {
                 font-weight: 700;
                 font-size: 24px;
                 line-height: 1.3;
+            }
+
+            .checkProject {
+                display: inline-block;
+                background-color: var(--accent);
+                padding: 12px 28px;
+                height: 48px;
+                border-radius: 5px;
+                color: var(--white);
+                letter-spacing: 0.15px;
+                font-size: 16px;
+                font-weight: 500;
+                line-height: normal;
+                position: relative;
+                overflow: hidden;
+                margin-bottom: 30px;
+
+                &:active {
+                    transform: scale(0.9);
+                    background-color: darken(#5c62ec, 5%);
+                    box-shadow: 0 2px 25px rgba(255, 0, 130, 0.2);
+                }
+                &:hover {
+                    box-shadow: 1px 1px 25px 10px rgba(146, 148, 248, 0.4);
+                }
+                &:before {
+                    content: "";
+                    position: absolute;
+                    z-index: 0;
+                    top: 0;
+                    left: -100%;
+                    width: 100%;
+                    height: 100%;
+                    background: linear-gradient(120deg, transparent, rgba(146, 148, 248, 0.4), transparent);
+                    transition: all 650ms;
+                    pointer-events: none;
+                }
+                &:hover:before {
+                    left: 100%;
+                }
             }
         }
     }

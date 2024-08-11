@@ -22,6 +22,7 @@ function Project() {
             <div className={styles.projectDescription}>
               <p>Skills: {project.skills}</p>
             </div>
+            <a className={styles.checkProject} href={project.hostingLink} target="_blank" rel="noopener noreferrer">Посмотреть проект</a>
             <GithubButton link={project.gitHubLink} />
           </div>
         </div>

@@ -1,4 +1,4 @@
-import devSearch from "../assets/images/devsearch.png";
+import pizza01Big from "../assets/images/pizzaBig.jpg";
 import project02Big from "../assets/images//02-big.jpg";
 import project02 from "../assets/images/02.jpg";
 import project03Big from "../assets/images/03-big.jpg";
@@ -12,11 +12,12 @@ import project06 from "../assets/images/06.jpg";
 
 const projects = [
   {
-    title: "Dev-finder",
-    skills: "React, Typescript, Generate React CLI, GitHub api",
-    img: devSearch,
-    imgBig: devSearch,
-    gitHubLink: "https://github.com/a-slesarenko/Dev-Search",
+    title: "Andrey's Pizza",
+    skills: "React, Typescript, Redux Toolkit 2.2, webpack v5, React Router v6, Axios, CSS-Modules / SCSS, React Content Loader, Mockapi, lodash debounse",
+    img: pizza01Big,
+    imgBig: pizza01Big,
+    gitHubLink: "https://github.com/a-slesarenko/Pizzeria",
+    hostingLink: "https://a-slesarenko.github.io/Pizzeria/#/"
   },
   {
     title: "My future project",
